@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE3217D8-21B2-4DBA-A35E-06342CACAB2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Atendimento_Virtual___Aromaterapia</RootNamespace>
+    <AssemblyName>Atendimento Virtual - Aromaterapia</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\leotk\Saved Games\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>868B08D2A5B10A0B817FDDB98741007570BAE979</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Atendimento Virtual - Aromaterapia_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abertura.Designer.cs">
+      <DependentUpon>abertura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alecrimdesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alecrimdesc.Designer.cs">
+      <DependentUpon>alecrimdesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlecrimLavanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlecrimLavanda.Designer.cs">
+      <DependentUpon>AlecrimLavanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aroma.cs" />
+    <Compile Include="CapimHortelã.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapimHortelã.Designer.cs">
+      <DependentUpon>CapimHortelã.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapimLdesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapimLdesc.Designer.cs">
+      <DependentUpon>CapimLdesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eucaliptodescr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eucaliptodescr.Designer.cs">
+      <DependentUpon>eucaliptodescr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Final.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final.Designer.cs">
+      <DependentUpon>Final.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Final2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final2.Designer.cs">
+      <DependentUpon>Final2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Final3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final3.Designer.cs">
+      <DependentUpon>Final3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horteladesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horteladesc.Designer.cs">
+      <DependentUpon>Horteladesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laranjad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laranjad.Designer.cs">
+      <DependentUpon>Laranjad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lavandadesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lavandadesc.Designer.cs">
+      <DependentUpon>lavandadesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Limaod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Limaod.Designer.cs">
+      <DependentUpon>Limaod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nardodescr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nardodescr.Designer.cs">
+      <DependentUpon>nardodescr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NardoRosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NardoRosa.Designer.cs">
+      <DependentUpon>NardoRosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pinhodescr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pinhodescr.Designer.cs">
+      <DependentUpon>pinhodescr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preselecao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preselecao2.Designer.cs">
+      <DependentUpon>Preselecao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preselecao3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preselecao3.Designer.cs">
+      <DependentUpon>Preselecao3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreSeleção.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreSeleção.Designer.cs">
+      <DependentUpon>PreSeleção.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LaranjaLimao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaranjaLimao.Designer.cs">
+      <DependentUpon>LaranjaLimao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PinhoEucalipto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PinhoEucalipto.Designer.cs">
+      <DependentUpon>PinhoEucalipto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salviadesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salviadesc.Designer.cs">
+      <DependentUpon>salviadesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sandalodesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sandalodesc.Designer.cs">
+      <DependentUpon>sandalodesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SandaloVetiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SandaloVetiver.Designer.cs">
+      <DependentUpon>SandaloVetiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tomilho e Salvia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tomilho e Salvia.Designer.cs">
+      <DependentUpon>Tomilho e Salvia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tomilhodesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tomilhodesc.Designer.cs">
+      <DependentUpon>tomilhodesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vetiverdesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vetiverdesc.Designer.cs">
+      <DependentUpon>vetiverdesc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="abertura.resx">
+      <DependentUpon>abertura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alecrimdesc.resx">
+      <DependentUpon>alecrimdesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlecrimLavanda.resx">
+      <DependentUpon>AlecrimLavanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapimHortelã.resx">
+      <DependentUpon>CapimHortelã.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapimLdesc.resx">
+      <DependentUpon>CapimLdesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eucaliptodescr.resx">
+      <DependentUpon>eucaliptodescr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final.resx">
+      <DependentUpon>Final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final2.resx">
+      <DependentUpon>Final2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final3.resx">
+      <DependentUpon>Final3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horteladesc.resx">
+      <DependentUpon>Horteladesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laranjad.resx">
+      <DependentUpon>Laranjad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lavandadesc.resx">
+      <DependentUpon>lavandadesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Limaod.resx">
+      <DependentUpon>Limaod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nardodescr.resx">
+      <DependentUpon>nardodescr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NardoRosa.resx">
+      <DependentUpon>NardoRosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pinhodescr.resx">
+      <DependentUpon>pinhodescr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PinhoEucalipto.resx">
+      <DependentUpon>PinhoEucalipto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preselecao2.resx">
+      <DependentUpon>Preselecao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preselecao3.resx">
+      <DependentUpon>Preselecao3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreSeleção.resx">
+      <DependentUpon>PreSeleção.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="LaranjaLimao.resx">
+      <DependentUpon>LaranjaLimao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salviadesc.resx">
+      <DependentUpon>salviadesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sandalodesc.resx">
+      <DependentUpon>sandalodesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SandaloVetiver.resx">
+      <DependentUpon>SandaloVetiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tomilho e Salvia.resx">
+      <DependentUpon>Tomilho e Salvia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tomilhodesc.resx">
+      <DependentUpon>tomilhodesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vetiverdesc.resx">
+      <DependentUpon>vetiverdesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Atendimento Virtual - Aromaterapia_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seta Prox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alecrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seta pra direita.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alecrim cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eucalipto cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eucalipto cartão1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eucalipto-png-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hortelã Pimenta cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hortela pimenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capim limão cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capim-limão.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laranja cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilustracao-realista-de-buque-de-lavanda_1284-9237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lavanda cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavanda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavanda-png-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limão - carta.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limão.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIMAO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nardo cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nardo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinho cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvia cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salviaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandalo cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandalo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0605c9d158a1a58ea01957116f6403f1-tomilho-erva-ilustra----o-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomilho Cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vetiver cartão.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vetiver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavanda paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavanda paint1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvia final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavanda paint2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vetiverr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nardo imagem editado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alecrim bacana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandalo bacana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomilho bacana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvia ....jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvia ...1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvia ... - Copia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vetiver editado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53-cm-folhas-verdes-de-pinho-artificial-agulha-guirlanda-decora-o-da-rvore-de-natal-flores.jpg_q50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-geral-eucalipto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinhoooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinhoooo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botão.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botão1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botão2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lavanda em pé.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alecrim em pé.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Respire Inspire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
